@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Базовый стиль для всех кнопок калькулятора -->
+    <style name="CalcButton" parent="Widget.Material3.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="cornerRadius">32dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <!-- Цифры и точка — тёмно-серые -->
+    <style name="CalcButton.Dark" parent="CalcButton">
+        <item name="backgroundTint">@color/gray</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Второстепенные кнопки (C, (, ), %) — светло-серые -->
+    <style name="CalcButton.Gray" parent="CalcButton">
+        <item name="backgroundTint">@color/light_gray</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Операции (+ − × ÷ =) — оранжевые -->
+    <style name="CalcButton.Orange" parent="CalcButton">
+        <item name="backgroundTint">@color/orange</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Кнопка "=" на всю ширину -->
+    <style name="CalcButton.Orange.FullWidth" parent="CalcButton.Orange">
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_columnSpan">3</item> <!-- если используете GridLayout -->
+    </style>
+
+</resources>

@@ -1,5 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="Theme.Calculator" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.StylishCalculator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Основные цвета -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Фон окна (автоматически адаптируется под режим) -->
+        <item name="android:windowBackground">?android:attr/colorBackground</item>
+
+        <!-- Убраны android:textColorPrimary и android:textColorSecondary — они вызывают ошибку -->
+        <!-- Текст и элементы используют ?android:attr/textColorPrimary автоматически из DayNight -->
+    </style>
+
 </resources>
