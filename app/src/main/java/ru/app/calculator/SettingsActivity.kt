@@ -4,8 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.appcompat.widget.SwitchCompat
-import com.google.android.material.switchmaterial.SwitchMaterial
+import androidx.appcompat.widget.SwitchCompat  // Если используешь SwitchCompat
 
 class SettingsActivity : AppCompatActivity() {
 
@@ -15,12 +14,7 @@ class SettingsActivity : AppCompatActivity() {
 
         val switchDarkTheme = findViewById<SwitchCompat>(R.id.switchDarkTheme)
 
-        // Устанавливаем светлую тему по умолчанию (если режим не был изменён ранее)
-        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM) {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-        }
-
-        // Обновляем состояние переключателя в зависимости от текущего режима
+        // Отображаем текущее состояние (выключен = светлая)
         switchDarkTheme.isChecked = AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES
 
         switchDarkTheme.setOnCheckedChangeListener { _, isChecked ->
@@ -32,9 +26,9 @@ class SettingsActivity : AppCompatActivity() {
 
             AppCompatDelegate.setDefaultNightMode(newMode)
 
-            // Перезапуск MainActivity для применения темы
+            // Перезапуск приложения с главной активности
             val intent = Intent(this, MainActivity::class.java)
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
             startActivity(intent)
             finish()
         }

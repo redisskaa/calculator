@@ -1,12 +1,7 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-
+<resources>
     <style name="Theme.StylishCalculator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Переопределяем только нужное для тёмной -->
-        <item name="android:windowBackground">@color/black_shade_1</item>
-
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">#000000</item>
+        <item name="colorPrimary">@color/button_orange</item>
+        <item name="colorOnPrimary">#000000</item>
     </style>
-
 </resources>

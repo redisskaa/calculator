@@ -42,7 +42,6 @@ android {
 }
 
 dependencies {
-    implementation("com.google.android.material:material:1.12.0")
     implementation(libs.material)
     implementation(libs.exp4j)
     implementation(libs.androidx.core.ktx)

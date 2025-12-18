@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#FF1E1E1E</color>
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#FFA0A0A0</color>
+    <color name="button_dark">#FF3C3C3C</color>
+    <color name="button_gray">#FFA0A0A0</color>
+    <color name="button_orange">#FFFF9500</color>
+    <color name="text_on_dark">#FFFFFFFF</color>
+    <color name="text_on_gray">#FF000000</color>
+    <color name="text_on_orange">#FFFFFFFF</color>
+    <color name="black_shade_2">#D1CECE</color>
+</resources>

@@ -9,8 +9,24 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="black_shade_1">#FF1E1E1E</color>
-    <color name="black_shade_2">#FF2D2D2D</color>
+    <color name="black_shade_2">#000000</color>
     <color name="gray">#FF3C3C3C</color>
     <color name="orange">#FFFF9500</color>
     <color name="light_gray">#FFA0A0A0</color>
+
+    <color name="light_background">#FFFFFFFF</color>     <!-- белый фон -->
+    <color name="light_button_dark">#FFDDDDDD</color>    <!-- серый для цифр -->
+    <color name="light_button_gray">#FFE0E0E0</color>    <!-- светло-серый для C, %, скобок -->
+    <color name="light_text_dark">#FF000000</color>      <!-- чёрный текст на цифрах -->
+    <color name="light_text_gray">#FF333333</color>
+
+    <color name="background">#FFFFFFFF</color>              <!-- белый фон -->
+    <color name="text_primary">#FF000000</color>            <!-- чёрный текст результата -->
+    <color name="text_secondary">#FF666666</color>          <!-- серый текст выражения -->
+    <color name="button_dark">#FFF0F0F0</color>             <!-- фон цифр и точки -->
+    <color name="button_gray">#FFE0E0E0</color>             <!-- фон C, %, (, ) -->
+    <color name="button_orange">#FFFF9500</color>           <!-- оранжевый операций -->
+    <color name="text_on_dark">#FF000000</color>            <!-- текст на цифрах -->
+    <color name="text_on_gray">#FF333333</color>            <!-- текст на серых кнопках -->
+    <color name="text_on_orange">#FFFFFFFF</color>          <!-- белый текст на оранжевом -->
 </resources>
